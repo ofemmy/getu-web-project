@@ -1,0 +1,27 @@
+{
+  "name": "getu-web-project",
+  "version": "1.0.0",
+  "description": "Getu Prospects e.V. official website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofemmy/getu-web-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofemmy/getu-web-project/issues"
+  },
+  "homepage": "https://github.com/ofemmy/getu-web-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.15.0"
+  }
+}
