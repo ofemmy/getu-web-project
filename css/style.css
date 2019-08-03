@@ -9,7 +9,7 @@ nav {
   height: 60px; }
 
 .nav-item .nav-link {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 500; }
 
 #jumbotron-custom {
@@ -31,6 +31,37 @@ nav {
     font-size: 55px; }
   #custom-hero p.custom-hero-subtitle {
     color: #ffffff; }
+
+section > div {
+  min-height: 400px;
+  min-width: 500px; }
+
+section > div:nth-of-type(even) {
+  background: rgba(249, 202, 36, 0.2); }
+
+.intro-text-box {
+  height: inherit; }
+
+#intro-image-box {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bible2.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer; }
+
+.intro-image-box-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f6e58d; }
+  .intro-image-box-title h2 {
+    color: #ffffff;
+    text-align: center; }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)

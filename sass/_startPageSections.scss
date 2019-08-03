@@ -1,0 +1,38 @@
+section > div {
+  min-height: 400px;
+  min-width: 500px;
+}
+section > div:nth-of-type(even) {
+  background: rgba(249, 202, 36, 0.2);
+}
+.intro-text-box {
+  height: inherit;
+}
+#intro-image-box {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bible2.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.intro-image-box-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f6e58d;
+  h2 {
+    color: #ffffff;
+    text-align: center;
+    // transform: scale(1);
+    // transition: all 0.5s;
+    // &:hover {
+    //   transform: scale(1.1);
+    // }
+  }
+}
