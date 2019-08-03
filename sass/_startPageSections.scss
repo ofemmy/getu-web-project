@@ -1,25 +1,27 @@
 section > div {
-  height: 400px;
+  height: 450px;
 }
 section > div:nth-of-type(even) {
   background: rgba(249, 202, 36, 0.2);
 }
-.intro-text-box {
-  height: inherit;
-}
-#intro-image-box {
+.custom-image-box-intro,
+.custom-image-box-feature {
   position: relative;
-  //   height: 400px;
-  //   width: 100%;
+  overflow: hidden;
+  cursor: pointer;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/bible2.jpg");
   background-position: center;
   background-size: cover;
   padding: 0;
-  overflow: hidden;
-  cursor: pointer;
 }
-.intro-image-box-title {
+.custom-image-box-feature {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/specimen2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.custom-image-box-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,7 +37,14 @@ section > div:nth-of-type(even) {
     // }
   }
 }
-
 .custom-blockquote-text {
   font-size: 30px;
+}
+.custom-feature-list {
+  list-style: none;
+  padding: 0;
+  li {
+    //border: 1px solid #eee;
+    padding: 10px 0 10px 0;
+  }
 }
