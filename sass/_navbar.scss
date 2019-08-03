@@ -1,0 +1,18 @@
+nav {
+  box-shadow: 0px 1px 1px $dark-blue;
+}
+.nav-link {
+  text-transform: uppercase;
+}
+.navbar-brand {
+  img {
+    width: 150px;
+    height: 60px;
+  }
+}
+.nav-item {
+  .nav-link {
+    font-size: 19px;
+    font-weight: 500;
+  }
+}
