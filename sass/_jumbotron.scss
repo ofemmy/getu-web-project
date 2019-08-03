@@ -1,0 +1,26 @@
+#jumbotron-custom {
+  position: relative;
+  min-height: 90vh;
+  background: linear-gradient(rgba(#f1c40f, 0.1), rgba(#f1c40f, 0.1)),
+    url("/img/holdinghands.jpg") center;
+  background-size: cover;
+}
+#custom-hero {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  .custom-hero-header {
+    font-family: "Lato", sans-serif;
+    color: $custom-white;
+    font-weight: 400;
+    font-size: 55px;
+  }
+  p.custom-hero-subtitle {
+    color: $custom-white;
+  }
+  //position: absolute;
+  //   top: 50%;
+  //   left: 0;
+}

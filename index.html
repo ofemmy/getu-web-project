@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-md navbar-light fixed-top bg-custom-grey py-3"
-      >
+      <nav class="navbar navbar-expand-md navbar-light fixed py-2">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="/img/geTu.png" class="align-middle" alt="" />
@@ -40,6 +42,25 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Leitbild</a>
               </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Angebote und Leistungen
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Kontakt</a>
               </li>
@@ -54,6 +75,24 @@
         </div>
       </nav>
     </header>
+    <main>
+      <!-- JUMBOTRON -->
+      <div id="jumbotron-custom">
+        <div class="container" id="custom-hero">
+          <h1 class="custom-hero-header">
+            Willkommen <br />
+            bei <br />
+            GeTu Prospects e.V.
+          </h1>
+          <p class="custom-hero-subtitle lead">
+            Ambulante Hilfe für Menschen aller Kulturen und Nationen
+          </p>
+          <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Mehr Erfahren</a
+          >
+        </div>
+      </div>
+    </main>
     <!-- JAVASCRIPT SCRIPTS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
