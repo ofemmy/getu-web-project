@@ -80,13 +80,24 @@ section > div:nth-of-type(even) {
   padding: 0; }
 
 footer {
-  min-height: 100px;
-  background: #ffffff; }
-
-footer {
-  height: 100px;
-  padding: 50px;
-  width: 100%; }
+  background: rgba(249, 202, 36, 0.4); }
+  footer div {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer div p {
+      display: inline-block;
+      width: 50%; }
+    footer div ul {
+      display: flex;
+      list-style: none;
+      width: 50%;
+      justify-content: space-between;
+      align-items: center; }
+      footer div ul li a {
+        text-decoration: none; }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
