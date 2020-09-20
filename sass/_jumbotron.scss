@@ -1,8 +1,8 @@
 #jumbotron-custom {
   position: relative;
   min-height: 90vh;
-  background: linear-gradient(rgba(#f1c40f, 0.1), rgba(#f1c40f, 0.1)),
-    url("/img/holdinghands.jpg") center;
+  background: linear-gradient(rgba(#1d1d1c, 0.5), rgba(#20201d, 0.5)),
+    url("/img/banner2.jpg") center;
   background-size: cover;
 }
 #custom-hero {
@@ -10,15 +10,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   .custom-hero-header {
     font-family: "Lato", sans-serif;
     color: $custom-white;
-    font-weight: 400;
-    font-size: 55px;
+    // font-weight: 400;
+    // font-size: 55px;
   }
   p.custom-hero-subtitle {
     color: $custom-white;
+    font-size: 2rem;
   }
   //position: absolute;
   //   top: 50%;

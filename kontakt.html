@@ -35,15 +35,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="./index.html">StartSeite </a>
               </li>
-              <li class="nav-item active">
+              <!-- <li class="nav-item active">
                 <a class="nav-link" href="#"
                   >Über uns<span class="sr-only">(current)</span></a
                 >
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="./leitbild.html">Leitbild</a>
               </li>
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -61,7 +61,7 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-              </li>
+              </li> -->
               <li class="nav-item active">
                 <a class="nav-link" href="#">Kontakt</a>
               </li>
@@ -76,14 +76,73 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="min-vh-100 py-5" id="kontakt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h3>Kontakt</h3>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="anrede">Anrede:</label>
+                <select class="custom-select" id="anrede">
+                  <option selected>Bitte wählen Sie</option>
+                  <option value="Frau">Frau</option>
+                  <option value="Herr">Herr</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="firstName">Vorname:</label>
+                <input type="text" class="form-control" id="firstName" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nachname:</label>
+                <input type="text" class="form-control" id="fullName" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Ihre Email addresse:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="email@email.com"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >Wir werden Ihre E-Mail-Adresse niemals an Dritte
+                  weitergeben.</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="formGroupExampleInput">Ihre Nachricht</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  rows="6"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Absenden</button>
+            </form>
+          </div>
+          <div class="col-md-5 px-5">
+            <p>Wir freuen uns über Ihre Kontaktaufnahme.</p>
+            <h4>GeTu prospects e.V.</h4>
+            <p>Avenue Charles De Gaulle 11 <br />13469, Berlin</p>
+            <p></p>
+            <p>Tel.:+4917663892404</p>
+            <p>E-Mail: info@getu-prospects.de</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- FOOTER START -->
     <footer>
       <div class="container">
         <p>&#9400; GeTu Prospects e.V.</p>
         <ul>
-          <li><a href="#">Startseite</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="./index.html">Startseite</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
           <li><a href="#">Impressium</a></li>
         </ul>
       </div>
