@@ -21724,6 +21724,7 @@ video {
 }
 
 #hero-leitbild {
+  background-color: orange;
   background: url("/img/leitbild.jpg");
   background-size: cover;
   background-position: center;
