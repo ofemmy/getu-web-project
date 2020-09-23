@@ -1,170 +1,261 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="bg-white antialiased h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/1a77e76b10.js"></script>
+    <title>Getu|Kontakt</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed py-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/img/geTu.png" class="align-middle" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+  <body class="min-h-screen bg-white font-open-sans text-gray-800">
+    <!-- FOR MOBILE -->
+    <div
+      class="h-40 bg-primary flex flex-col justify-center items-center relative md:hidden"
+    >
+      <header
+        class="flex justify-between items-center bg-black-transparent text-white text-lg shadow-md absolute top-0 left-0 right-0"
+      >
+        <div class="py-3 px-5">
+          <!-- <h1 class="font-bold">Getu</h1> -->
+        </div>
+        <div id="hamburger" class="md:hidden mr-4">
+          <svg
+            class="w-6 cursor-pointer md:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">StartSeite </a>
-              </li>
-              <!-- <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Über uns<span class="sr-only">(current)</span></a
-                >
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="./leitbild.html">Leitbild</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Angebote und Leistungen
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li> -->
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Kontakt</a>
-              </li>
-              <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Impressium</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Datenschutz</a>
-                      </li> -->
-            </ul>
-          </div>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
         </div>
-      </nav>
-    </header>
-    <main class="min-vh-100 py-5" id="kontakt">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 pr-5 mt-3">
-            <p>Wir freuen uns über Ihre Kontaktaufnahme.</p>
-            <h4>GeTu prospects e.V.</h4>
-            <p>Avenue Charles De Gaulle 11 <br />13469, Berlin</p>
-            <p></p>
-            <p>Tel.:+4917663892404</p>
-            <p>E-Mail: info@getu-prospects.de</p>
-          </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-6">
-            <h3>Kontakt</h3>
-            <form action="#" method="post">
-              <div class="form-group">
-                <label for="anrede">Anrede:</label>
-                <select class="custom-select" id="anrede">
-                  <option selected>Bitte wählen Sie</option>
-                  <option value="Frau">Frau</option>
-                  <option value="Herr">Herr</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="firstName">Vorname:</label>
-                <input type="text" class="form-control" id="firstName" />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Nachname:</label>
-                <input type="text" class="form-control" id="fullName" />
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Ihre Email addresse:</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="email@email.com"
-                />
-                <small id="emailHelp" class="form-text text-muted"
-                  >Wir werden Ihre E-Mail-Adresse niemals an Dritte
-                  weitergeben.</small
-                >
-              </div>
 
-              <div class="form-group">
-                <label for="formGroupExampleInput">Ihre Nachricht</label>
-                <textarea
-                  type="text"
-                  class="form-control"
-                  id="formGroupExampleInput"
-                  rows="6"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Absenden</button>
-            </form>
-          </div>
+        <nav class="ml-24 hidden md:block">
+          <ul class="flex justify-around items-end">
+            <li class="py-3 px-5">
+              <a href="./index.html">Startseite</a>
+            </li>
+            <li class="py-3 px-5">
+              <a href="./leitbild.html">Leitbild</a>
+            </li>
+            <li class="py-3 px-5">
+              <a href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--  -->
+      <!-- MOBILE NAVIGATION START -->
+      <nav
+        class="bg-white shadow-md px-5 w-full hidden md:hidden absolute top-0 mt-10"
+        id="menu"
+      >
+        <ul>
+          <li class="hover:text-primary py-2">
+            <a href="./index.html">Startseite</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./leitbild.html">Leitbild</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="text-white text-center px-5 py-10">
+        <h3 class="text-md mt-5 text-xl uppercase font-merriweather font-bold">
+          Kontaktieren Sie uns
+        </h3>
+      </div>
+    </div>
+    <!-- NORMAL SCREEN -->
+    <div
+      id="hero-kontakt"
+      class="min-h-screen-80 hidden md:flex flex-col justify-center items-center relative"
+    >
+      <header
+        class="flex justify-between items-center bg-black-transparent text-white text-lg shadow-md absolute top-0 left-0 right-0 px-4"
+      >
+        <div class="py-3 px-5">
+          <!-- <h1 class="font-bold">Getu</h1> -->
         </div>
+        <div id="hamburger" class="md:hidden mr-4">
+          <svg
+            class="w-6 cursor-pointer md:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </div>
+
+        <nav class="ml-24 hidden md:block">
+          <ul class="flex justify-around items-end">
+            <li class="py-3 px-5 nav-link">
+              <a href="./index.html">Startseite</a>
+            </li>
+            <li class="py-3 px-5 nav-link">
+              <a href="./leitbild.html">Leitbild</a>
+            </li>
+            <li class="py-3 px-5 nav-link active">
+              <a href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--  -->
+      <!-- MOBILE NAVIGATION START -->
+      <nav
+        class="shadow-md px-5 w-full hidden md:hidden absolute top-0 mt-10"
+        id="menu"
+      >
+        <ul>
+          <li class="hover:text-primary py-2">
+            <a href="./index.html">Startsetite</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./leitbild.html">Leitbild</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="grid grid-cols-1 md:grid-cols-2">
+      <div id="address" class="px-8 py-8 md:px-16 md:py-16 md:bg-gray-100">
+        <p class="mb-2 md:mb-8 font-bold font-merriweather">
+          Wir freuen uns über Ihre Kontaktaufnahme.
+        </p>
+        <h4>GeTu prospects e.V.</h4>
+        <p>Avenue Charles De Gaulle 11 <br />13469, Berlin</p>
+        <p></p>
+        <p>Tel.:+4917663892404</p>
+        <p>E-Mail: info@getu-prospects.de</p>
+      </div>
+      <div
+        id="form"
+        class="px-8 py-8 md:px-16 md:py-16 bg-yellow-100 md:bg-gray-100"
+      >
+        <h3 class="font-bold mb-5 font-merriweather">Kontakt Formular</h3>
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="anrede" class="form-label">Anrede:</label>
+            <div class="inline-block relative w-full">
+              <select
+                class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+              >
+                <option selected>Bitte wählen Sie</option>
+                <option>Frau</option>
+                <option>Herr</option>
+              </select>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+              >
+                <svg
+                  class="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="vorname" class="form-label">Vorname:</label>
+            <input class="form-control" id="vorname" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="nachname" class="form-label">Nachname:</label>
+            <input type="text" class="form-control" id="nachname" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Ihre Email Addresse:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="email@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nachricht" class="form-label">Ihre Nachricht</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="nachricht"
+              rows="6"
+            ></textarea>
+            <button
+              type="submit"
+              class="py-2 text-white rounded px-4 bg-primary hover:bg-yellow-800 mt-3 inline-block text-lg font-bold"
+            >
+              Absenden
+            </button>
+          </div>
+        </form>
       </div>
     </main>
-    <!-- FOOTER START -->
-    <footer>
-      <div class="container">
-        <p>&#9400; GeTu Prospects e.V.</p>
-        <ul>
-          <li><a href="./index.html">Startseite</a></li>
-          <li><a href="./kontakt.html">Kontakt</a></li>
-          <li><a href="#">Impressium</a></li>
-        </ul>
+    <footer class="bg-gray-200 text-sm md:text-base">
+      <div
+        class="container mx-auto px-3 md:px-6 flex justify-between items-center"
+      >
+        <div class="address py-8">
+          <p>
+            GeTu Prospects e.V. <br />
+            Avenue Charles De Gaulle 11 <br />
+            13469, Berlin
+          </p>
+        </div>
+        <div class="contact py-8">
+          <p>info@getu-prospects.de</p>
+          <p>(+49) 17663892404</p>
+        </div>
+        <div class="credit text-sm hidden md:block md:text-base">
+          <p>&#9400; 2020</p>
+        </div>
+        <div class="action hidden md:block md:text-base">
+          <button
+            class="bg-primary w-16 h-16 rounded-full flex flex-col justify-center items-center hover:bg-yellow-400"
+            id="scrollTop"
+          >
+            <svg
+              class="w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 11l7-7 7 7M5 19l7-7 7 7"
+              />
+            </svg>
+            <span>TOP</span>
+          </button>
+        </div>
       </div>
     </footer>
-    <!-- FOOTER END -->
-
-    <!-- JAVASCRIPT SCRIPTS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

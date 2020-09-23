@@ -1,180 +1,168 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="bg-white antialiased h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/1a77e76b10.js"></script>
+    <title>Getu|Leitbild</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed py-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/img/geTu.png" class="align-middle" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">StartSeite </a>
-              </li>
-              <!-- <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Über uns<span class="sr-only">(current)</span></a
-                >
-              </li> -->
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Leitbild<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="./lesitungen.html"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Angebote und Leistungen
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="./kontakt.html">Kontakt</a>
-              </li>
-              <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Impressium</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Datenschutz</a>
-                      </li> -->
-            </ul>
-          </div>
+  <body class="min-h-screen bg-gray-100 font-open-sans text-gray-800">
+    <div
+      id="hero-leitbild"
+      class="min-h-screen-90 flex flex-col justify-center items-center relative"
+    >
+      <header
+        class="flex justify-between items-center bg-black-transparent text-white text-lg shadow-md absolute top-0 left-0 right-0 px-4"
+      >
+        <div class="py-3 px-5">
+          <!-- <h1 class="font-bold">Getu</h1> -->
         </div>
+        <div id="hamburger" class="md:hidden mr-4">
+          <svg
+            class="w-6 cursor-pointer md:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </div>
+
+        <nav class="ml-24 hidden md:block">
+          <ul class="flex justify-around items-end">
+            <li class="py-3 px-5 nav-link">
+              <a href="./index.html">Startsetite</a>
+            </li>
+            <li class="py-3 px-5 active nav-link">
+              <a href="./leitbild.html">Leitbild</a>
+            </li>
+            <li class="py-3 px-5 nav-link">
+              <a href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--  -->
+      <!-- MOBILE NAVIGATION START -->
+      <nav
+        class="bg-white shadow-md px-5 w-full hidden md:hidden absolute top-0 mt-10"
+        id="menu"
+      >
+        <ul>
+          <li class="hover:text-primary py-2">
+            <a href="./index.html">Startseite</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./leitbild.html">Leitbild</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./kontakt.html">Kontakt</a>
+          </li>
+        </ul>
       </nav>
-    </header>
-    <main class="mt-5 min-vh-100" id="leitbild">
-      <div id="motivation">
-        <div class="container">
-          <div class="row mh-100">
-            <div
-              class="col-12 d-flex flex-column justify-content-center mh-100 py-5"
+      <div
+        class="bg-black-transparent text-white text-center px-5 py-10 rounded shadow-2xl border-gray-500"
+      >
+        <h1 class="text-white font-merriweather text-4xl md:text-6xl">
+          GeTu Prospects e.V.
+        </h1>
+        <h3 class="text-md lg:text-2xl">
+          Freundschaft ist eine Bereicherung des Lebens
+        </h3>
+      </div>
+    </div>
+    <main class="flex flex-col justify-evenly">
+      <div id="motivation" class="lg:h-48 pt-5 md:mb-8 w-full">
+        <div
+          class="w-full container mx-auto flex flex-col justify-around items-center py-5 px-5"
+        >
+          <div class="text-center md:text-lg inline-block">
+            <h2
+              id="header"
+              class="uppercase font-merriweather font-bold px-3 py-3"
             >
-              <h2
-                class="text-primary text-center text-uppercase py-2"
-                id="header-text"
-              >
-                Motivation der Gründung
-              </h2>
-              <p class="text-primary text-justify mt-3" id="content-text">
-                <strong>GeTu Prospekts e.V.</strong> wurde als Brückenbauer
-                unter den verschiedenen Kulturen in unserer Gesellschaft
-                gegründet. Unsere Gesellschaft begegnet neuen Herausforderungen
-                und viele Menschen kämpfen dabei mit der Unwissenheit, trotz der
-                vorhandenen Möglichkeiten, die der Staat gleichermaßen jedem
-                Bürger zugesteht, um seine Würde zu wahren, an der Gesellschaft
-                teilzuhaben. Stattdessen befinden sich viele Menschen am Rande
-                der Gesellschaft.
-              </p>
-            </div>
+              Motivation der gründung
+            </h2>
+          </div>
+          <div class="mt-1">
+            <p class="text-sm md:text-base lg:text-md text-justify">
+              GeTu Prospekts e.V. wurde als Brückenbauer unter den verschiedenen
+              Kulturen in unserer Gesellschaft gegründet. Unsere Gesellschaft
+              begegnet neuen Herausforderungen und viele Menschen kämpfen dabei
+              mit der Unwissenheit, trotz der vorhandenen Möglichkeiten, die der
+              Staat gleichermaßen jedem Bürger zugesteht, um seine Würde zu
+              wahren, an der Gesellschaft teilzuhaben. Stattdessen befinden sich
+              viele Menschen am Rande der Gesellschaft.
+            </p>
           </div>
         </div>
       </div>
-      <div id="vision">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-12 d-flex flex-column justify-content-center mh-100 py-5"
+      <div id="vision" class="py-3 w-full md:w-2/3 mx-auto">
+        <div
+          class="container md:bg-yellow-100 md:border-8 md:border-white flex flex-col justify-around items-center py-5 px-5 md:shadow-md rounded h-full"
+        >
+          <div class="md:text-lg inline-block text-center">
+            <h2
+              id="header"
+              class="uppercase font-merriweather font-bold px-3 py-3 inline-block"
             >
-              <h2
-                class="text-primary text-center text-uppercase py-2"
-                id="header-text"
-              >
-                Vision des Vereins
-              </h2>
-              <p class="text-primary text-justify mt-3">
+              Vision des Vereins
+            </h2>
+            <div class="mt-1 text-sm md:text-base lg:text-md text-justify">
+              <p>
                 Unsere Vision von Respekt und Nächstenliebe dient der Achtung
                 des anderen und bestärkt die Gemeinschaft in unserer
                 Gesellschaft.
-                <strong>
-                  Als christliche Organisation begegnen wir unseren Mitmenschen
-                  mit Nächstenliebe.
-                </strong>
+                <strong
+                  >Als christliche Organisation begegnen wir unseren Mitmenschen
+                  mit Nächstenliebe.</strong
+                >
                 Jeder Mensch ist wertvoll, dabei wird er respektiert und
                 angenommen wie er ist.
               </p>
-              <p class="text-primary text-justify">
-                Wir nehmen jeden Menschen mit seinen Werten, seiner Verfassung
-                und seinen Bedürfnissen ernst.Kinder, Jugendliche und auch
-                Erwachsene brauchen eine Zukunftsperspektive. Sie brauchen
-                Hoffnung für ihr eigenes Leben und die Erkenntnis, dass sie
-                belohnt werden, wenn sie Verantwortung übernehmen.Dabei ist
-                Urvertrauen ist die Grundlage des Lebens. Es ist eine
-                Bereicherung, dass wir Vertrauen zueinander haben. Ohne
-                Vertrauen wird Zusammenarbeit schwierig.
-                <strong>
-                  Freundschaft ist eine Bereicherung des Lebens.
-                </strong>
+              <p class="mt-1">
+                <strong
+                  >Wir nehmen jeden Menschen mit seinen Werten, seiner
+                  Verfassung und seinen Bedürfnissen ernst.</strong
+                >Kinder, Jugendliche und auch Erwachsene brauchen eine
+                Zukunftsperspektive. Sie brauchen Hoffnung für ihr eigenes Leben
+                und die Erkenntnis, dass sie belohnt werden, wenn sie
+                Verantwortung übernehmen.Dabei ist Urvertrauen ist die Grundlage
+                des Lebens. Es ist eine Bereicherung, dass wir Vertrauen
+                zueinander haben. Ohne Vertrauen wird Zusammenarbeit schwierig.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="rest-text">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-12 d-flex flex-column justify-content-center mh-100 py-5"
-            >
-              <p class="text-primary text-justify">
+              <p class="mt-1">
                 Zuwendung erfahren, einander helfen und Zueinander stehen sind
                 für junge Menschen sowohl Erwachsene wertvolle Erfahrungen.
                 <strong> Als Verein stehen wir solchen Menschen bei. </strong>
               </p>
-              <p class="text-primary text-justify">
+              <p class="mt-1">
                 Perspektivlosigkeit und Orientierungslosigkeit prägen den
                 Alltags der jugendlichen in unserer Gesellschaft.
-                <strong>Als Hoffnungsbringer treten wir ein.</strong>
+                <strong> Als Hoffnungsbringer treten wir ein. </strong>
               </p>
-              <p class="text-primary text-justify">
+              <p class="mt-1">
                 Es gibt Menschen die Enttäuschung und Ausgrenzung erleben, für
-                die Gesellschaft ist eine große Herausforderung. Als Verein sind
-                wir da um gemeinsame Ausweg zu finden.
+                die Gesellschaft ist eine große Herausforderung.
                 <strong>
-                  Wir stärken Familie und das Miteinander in Gemeinden, Gruppen
-                  und Verbänden.
+                  Als Verein sind wir da um gemeinsame Ausweg zu finden.
                 </strong>
               </p>
-
-              <p class="text-primary text-justify">
-                Jeder Mensch kommt aus einer Familie. Familie bedeutet viel für
-                uns in unserem gemeinsamen Lebensweg und ohne Gemeinschaft
-                können wir nicht leben.
+              <p class="mt-1">
+                Wir stärken Familie und das Miteinander in Gemeinden, Gruppen
+                und Verbänden. Jeder Mensch kommt aus einer Familie. Familie
+                bedeutet viel für uns in unserem gemeinsamen Lebensweg und ohne
+                Gemeinschaft können wir nicht leben.
                 <strong>
                   Durch Förderung, Unterstützung und Begleitung helfen wir
                   Menschen ans Ziel zu kommen und Chancen im Leben zu bekommen.
@@ -184,35 +172,50 @@
           </div>
         </div>
       </div>
+      <div id="margin" class="hidden lg:block h-32 py-5"></div>
     </main>
-    <!-- FOOTER START -->
-    <footer>
-      <div class="container">
-        <p>&#9400; GeTu Prospects e.V.</p>
-        <ul>
-          <li><a href="#">Startseite</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Impressium</a></li>
-        </ul>
+    <footer class="bg-gray-200 text-sm md:text-base">
+      <div
+        class="container mx-auto px-3 md:px-6 flex justify-between items-center"
+      >
+        <div class="address py-8">
+          <p>
+            GeTu Prospects e.V. <br />
+            Avenue Charles De Gaulle 11 <br />
+            13469, Berlin
+          </p>
+        </div>
+        <div class="contact py-8">
+          <p>info@getu-prospects.de</p>
+          <p>(+49) 17663892404</p>
+        </div>
+        <div class="credit text-sm hidden md:block md:text-base">
+          <p>&#9400; 2020</p>
+        </div>
+        <div class="action hidden md:block md:text-base">
+          <button
+            class="bg-primary w-16 h-16 rounded-full flex flex-col justify-center items-center hover:bg-yellow-400"
+            id="scrollTop"
+          >
+            <svg
+              class="w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 11l7-7 7 7M5 19l7-7 7 7"
+              />
+            </svg>
+            <span>TOP</span>
+          </button>
+        </div>
       </div>
     </footer>
-    <!-- FOOTER END -->
-
-    <!-- JAVASCRIPT SCRIPTS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

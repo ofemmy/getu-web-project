@@ -1,416 +1,309 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="bg-white antialiased h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://kit.fontawesome.com/1a77e76b10.js"></script>
+    <title>Getu|Startseite</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body>
-    <!-- NAVIGATION BAR START -->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed py-2">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/img/getu.png" class="align-middle" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+  <body class="min-h-screen font-open-sans text-gray-800">
+    <div
+      id="hero"
+      class="min-h-screen-90 flex flex-col justify-center items-center relative"
+    >
+      <header
+        class="flex justify-between items-center bg-black-transparent text-white text-lg shadow-md absolute top-0 left-0 right-0 px-4"
+      >
+        <div class="py-3 px-5">
+          <!-- <h1 class="font-bold font-merriweather text-primary">GeTu</h1> -->
+        </div>
+        <div id="hamburger" class="md:hidden mr-4">
+          <svg
+            class="w-6 cursor-pointer md:hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Startseite <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="./about-us.html">Über uns</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="./leitbild.html">Leitbild</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="./lesitungen.html"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Angebote und Leistungen
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="./kontakt.html">Kontakt</a>
-              </li>
-              <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Impressium</a>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </div>
+
+        <nav class="ml-24 hidden md:block">
+          <ul class="flex justify-around items-end">
+            <li class="py-3 px-5 nav-link active">
+              <a href="./index.html">Startseite</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Datenschutz</a>
-            </li> -->
-            </ul>
-          </div>
-        </div>
+            <li class="py-3 px-5 nav-link">
+              <a href="./leitbild.html">Leitbild</a>
+            </li>
+            <li class="py-3 px-5 nav-link">
+              <a href="./kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--  -->
+      <!-- MOBILE NAVIGATION START -->
+      <nav
+        class="bg-white shadow-md px-8 w-full hidden md:hidden absolute top-0 mt-10"
+        id="menu"
+      >
+        <ul>
+          <li class="hover:text-primary py-2">
+            <a href="./index.html">Startseite</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./leitbild.html">Leitbild</a>
+          </li>
+          <li class="hover:text-primary py-2">
+            <a href="./kontakt.html">Kontakt</a>
+          </li>
+        </ul>
       </nav>
-    </header>
-    <!-- NAVIGATION BAR END -->
-    <main>
-      <!-- JUMBOTRON START -->
-      <div id="jumbotron-custom">
-        <div class="container" id="custom-hero">
-          <h1 class="display-1 custom-hero-header">
-            <!-- Willkommen <br />
-            bei <br /> -->
-            GeTu Prospects e.V.
-          </h1>
-          <p class="custom-hero-subtitle lead text-center px-2">
-            Ambulante Hilfe für Menschen aller Kulturen und Nationen
-          </p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="#short-introduction"
-            role="button"
-            >Mehr Erfahren</a
-          >
-        </div>
+      <div
+        class="bg-black-transparent text-white text-center px-5 py-10 rounded shadow-2xl border-gray-500"
+      >
+        <h1 class="text-white font-merriweather text-4xl md:text-6xl">
+          GeTu Prospects e.V.
+        </h1>
+        <h3 class="text-md lg:text-2xl">
+          Ambulante Hilfe für Menschen aller Kulturen und Nationen
+        </h3>
+        <!-- <a
+          href=""
+          class="py-3 rounded px-4 bg-primary hover:bg-yellow-500 mt-3 inline-block text-lg font-bold"
+          >Mehr Erfahren</a
+        > -->
       </div>
-      <!-- JUMBOTRON END -->
-      <section>
-        <!-- WER WIR SIND START -->
-        <div id="short-introduction">
-          <div class="container h-100">
-            <div class="row h-100">
-              <div class="col-md-7 intro-text-box d-flex h-100">
-                <p class="lead align-self-center text-justify">
-                  <strong>GeTu Prospects e.V.</strong> ist eine christliche
-                  Einrichtung, die ambulante Hilfe für Menschen aller Kulturen
-                  und Nationen bietet. Unsere Arbeit basiert auf christlichen
-                  und ethischen Werten, die u.a. die Einzigartigkeit jedes
-                  Menschen, Nächstenliebe, Vergebung, Barmherzigkeit, Akzeptanz
-                  und Beistand als Leitprinzipien der Unterstützung und Hilfe
-                  betrachten.
-                </p>
-              </div>
-              <div class="col-md-5 custom-image-box-intro">
-                <div class="custom-image-box-title">
-                  <h2 class="p-3 display-4 text-uppercase">Wer wir sind</h2>
-                </div>
-                <!-- <img src="./img/cross.jpg" alt="" /> -->
-              </div>
-            </div>
+    </div>
+    <main>
+      <div
+        class="lg:h-64 lg:bg-yellow-100 lg:bg-none py-5 w-full lg:w-3/4 lg:intro-box"
+      >
+        <div
+          class="container mx-auto lg:border-8 border-white flex flex-col justify-around items-center py-5 px-5 lg:shadow-lg rounded"
+        >
+          <div class="text-lg inline-block">
+            <h2
+              id="header"
+              class="uppercase font-merriweather font-bold px-3 py-2"
+            >
+              Wer sind wir?
+            </h2>
           </div>
-        </div>
-        <!-- WER WIR SIND END -->
-        <!-- BLOCKQUOTE START -->
-        <div>
-          <div
-            class="container d-flex h-100 justify-content-center align-items-center"
-          >
-            <p class="text-center custom-blockquote-text">
-              Wir wollen eine positive Atmosphäre des Willkommenseins und der
-              Wertschätzung ausstrahlen und ein gutes soziales Miteinander
-              fördern.
+          <div class="mt-1">
+            <p
+              class="text-sm md:text-base lg:text-md text-justify lg:text-center"
+            >
+              GeTu Prospects e.V. ist eine christliche Einrichtung, die
+              ambulante Hilfe für Menschen aller Kulturen und Nationen bietet.
+              Unsere Arbeit basiert auf christlichen und ethischen Werten, die
+              u.a. die Einzigartigkeit jedes Menschen, Nächstenliebe, Vergebung,
+              Barmherzigkeit, Akzeptanz und Beistand als Leitprinzipien der
+              Unterstützung und Hilfe betrachten.
             </p>
           </div>
         </div>
-        <!-- BLOCKQUOTE END -->
-        <!-- WAS WIR TUN START -->
-        <div>
-          <div class="container h-100">
-            <div class="row h-100">
-              <div class="col-md-6 custom-image-box-feature">
-                <div class="custom-image-box-title">
-                  <h2 class="p-3 display-4 text-uppercase">Was wir tun</h2>
-                </div>
-              </div>
-              <div
-                class="col-md-5 ml-1 intro-text-box d-flex flex-column justify-content-around h-100"
-              >
-                <ul class="custom-feature-list">
-                  <li class="lead">
-                    <span class="mr-2"
-                      ><i class="fas fa-angle-double-right"></i
-                    ></span>
-                    Inobhutnahme Kinder & Jugendliche
-                  </li>
-                  <li class="lead">
-                    <span class="mr-2"
-                      ><i class="fas fa-angle-double-right"></i
-                    ></span>
-                    Erziehungsbeistand
-                  </li>
-                  <li class="lead">
-                    <span class="mr-2"
-                      ><i class="fas fa-angle-double-right"></i
-                    ></span>
-                    Einzelfallhilfe für Familie, Kinder & Jugendliche
-                  </li>
-                  <li class="lead">
-                    <span class="mr-2"
-                      ><i class="fas fa-angle-double-right"></i></span
-                    >Beratungsstelle für Familie
-                  </li>
-                </ul>
-                <!-- <p class="lead text-justify">
-                  Integrative Arbeit liegt uns besonders am Herzen. Wir
-                  motivieren die betreuten Kinder und Jugendliche am
-                  gesellschaftlichen Leben teilzuhaben, um die Herausforderung
-                  der Ausgrenzung und Isolation zu überwinden. Als Team wollen
-                  wir Vorbild für die Kinder und Jugendlichen sein, pflegen eine
-                  Kultur des Respekts gegenüber dem, was zunächst fremd
-                  erscheint und bemühen uns dazu beizutragen, dass das Leben und
-                  die soziale Umwelt entwicklungsförderliche Bedingen des
-                  Aufwachsens und der Verselbständigung bietet.
-                </p> -->
-                <div>
-                  <button type="button" class="btn btn-primary">
-                    Mehr Erfahren
-                  </button>
-                </div>
-              </div>
-            </div>
+      </div>
+      <div id="margin" class="hidden lg:block h-32 py-5 bg-white"></div>
+      <div
+        id="services"
+        class="h-80 py-5 bg-gray-700 flex flex-col items-center"
+      >
+        <div class="text-lg inline-block rounded">
+          <h2
+            id="header"
+            class="uppercase text-white font-merriweather font-bold px-3 py-2"
+          >
+            Was tun wir?
+          </h2>
+        </div>
+        <!-- FOR MOBILE -->
+        <div
+          class="px-5 py-2 flex-1 flex flex-col justify-around text-white lg:hidden"
+        >
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-4 inline"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="inline">Inobhutnahme von Kindern und Jugendlichen</p>
+          </div>
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-4 inline"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="inline">
+              Einzelfallhilfe für Familien, Kinder und Jugendliche
+            </p>
+          </div>
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-4 inline"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="inline-block">Erziehungsbeistand</p>
+          </div>
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-4 inline"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <p class="inline">Beratungsstelle für Familien</p>
           </div>
         </div>
-        <!-- WAS WIR TUN END -->
-
-        <!-- CAROUSEL START -->
-        <div>
-          <div class="container h-100">
-            <div class="row h-100">
-              <div class="col-md-6 d-flex h-100" style="padding-left: 0">
-                <p class="lead align-self-center text-justify px-4">
-                  Weihnachten ist eine Zeit für die Familie. Deshalb laden wir
-                  jedes Jahr am 26. Dezember Menschen ein, deren Familien weit
-                  von ihnen entfernt sind, gemeinsam zu feiern und die Liebe zu
-                  Weihnachten mit ihnen zu teilen. Damit zeigen wir, dass jeder
-                  von überall es verdient, geliebt und gefeiert zu werden.
-                </p>
-              </div>
-              <div class="col-md-6 h-100" id="carousel-div">
-                <div
-                  id="custom-carousel"
-                  class="container carousel slide h-100"
-                  data-ride="carousel"
-                >
-                  <div class="carousel-inner h-100">
-                    <div class="carousel-item active h-100">
-                      <img
-                        src="./img/geTu-imgs/img-1.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-2.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-3.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-4.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-6.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-7.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-8.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-9.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-10.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-11.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-12.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-13.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-14.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-15.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-16.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-17.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-18.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-19.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                    <div class="carousel-item h-100">
-                      <img
-                        src="./img/geTu-imgs/img-20.jpg"
-                        alt=""
-                        class="d-block w-100 h-100"
-                      />
-                    </div>
-                  </div>
-                  <a
-                    class="carousel-control-prev"
-                    href="#custom-carousel"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a
-                    class="carousel-control-next"
-                    href="#custom-carousel"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+        <!-- MOBILE MENU ENDS -->
+        <div class="container mx-auto grid-cols-4 gap-3 mt-3 hidden lg:grid">
+          <div
+            id="service-1"
+            class="h-40 flex flex-col justify-center items-center border-10 border-white bg-primary shadow-md px-5 py-5"
+          >
+            <h3 class="text-center text-lg">
+              Inobhutnahme von Kindern <br />&<br />
+              Jugendlichen
+            </h3>
+          </div>
+          <div
+            id="service-2"
+            class="h-40 flex flex-col justify-center items-center bg-primary border-10 border-white shadow-md px-5 py-5"
+          >
+            <h3 class="text-center text-lg">Erziehungsbeistand</h3>
+          </div>
+          <div
+            id="service-3"
+            class="h-40 flex flex-col justify-center items-center bg-primary border-10 border-white shadow-md px-5 py-5"
+          >
+            <h3 class="text-center text-lg">Beratungsstelle für Familien</h3>
+          </div>
+          <div
+            id="service-4"
+            class="h-40 flex flex-col justify-center items-center bg-primary border-10 border-white shadow-md px-5 py-5"
+          >
+            <h3 class="text-center text-lg">
+              Einzelfallhilfe für Familien, Kinder <br />&<br />
+              Jugendliche
+            </h3>
           </div>
         </div>
-        <!-- CAROUSEL END -->
-      </section>
+      </div>
+      <div class="h-64">
+        <div
+          class="container mx-auto py-5 px-5 flex justify-center items-center h-full"
+        >
+          <p
+            class="font-merriweather text-center text-xl md:text-2xl text-gray-700"
+          >
+            Wir wollen eine positive Atmosphäre des Willkommenseins und der
+            Wertschätzung ausstrahlen und ein gutes soziales Miteinander fördern
+          </p>
+        </div>
+      </div>
     </main>
-    <!-- FOOTER START -->
-    <footer>
-      <div class="container">
-        <p>&#9400; GeTu Prospects e.V.</p>
-        <ul>
-          <li><a href="#">Startseite</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Impressium</a></li>
-        </ul>
+    <footer class="bg-gray-200 text-sm md:text-base">
+      <div
+        class="container mx-auto px-3 md:px-6 flex justify-between items-center"
+      >
+        <div class="address py-8">
+          <p>
+            GeTu Prospects e.V. <br />
+            Avenue Charles De Gaulle 11 <br />
+            13469, Berlin
+          </p>
+        </div>
+        <div class="contact py-8">
+          <p>info@getu-prospects.de</p>
+          <p>(+49) 17663892404</p>
+        </div>
+        <div class="credit text-sm hidden md:block md:text-base">
+          <p>&#9400; 2020</p>
+        </div>
+        <div class="action hidden md:block md:text-base">
+          <button
+            class="bg-primary w-16 h-16 rounded-full flex flex-col justify-center items-center hover:bg-yellow-400"
+            id="scrollTop"
+          >
+            <svg
+              class="w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 11l7-7 7 7M5 19l7-7 7 7"
+              />
+            </svg>
+            <span>TOP</span>
+          </button>
+        </div>
       </div>
     </footer>
-    <!-- FOOTER END -->
-
-    <!-- JAVASCRIPT SCRIPTS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

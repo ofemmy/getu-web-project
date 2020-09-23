@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/1a77e76b10.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed py-2">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/img/geTu.png" class="align-middle" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">StartSeite </a>
+              </li>
+              <!-- <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Über uns<span class="sr-only">(current)</span></a
+                >
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="./leitbild.html">Leitbild</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Angebote und Leistungen
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Kontakt</a>
+              </li>
+              <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Impressium</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Datenschutz</a>
+                      </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="min-vh-100 py-5" id="kontakt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pr-5 mt-3">
+            <p>Wir freuen uns über Ihre Kontaktaufnahme.</p>
+            <h4>GeTu prospects e.V.</h4>
+            <p>Avenue Charles De Gaulle 11 <br />13469, Berlin</p>
+            <p></p>
+            <p>Tel.:+4917663892404</p>
+            <p>E-Mail: info@getu-prospects.de</p>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-6">
+            <h3>Kontakt</h3>
+            <form action="#" method="post">
+              <div class="form-group">
+                <label for="anrede">Anrede:</label>
+                <select class="custom-select" id="anrede">
+                  <option selected>Bitte wählen Sie</option>
+                  <option value="Frau">Frau</option>
+                  <option value="Herr">Herr</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="firstName">Vorname:</label>
+                <input type="text" class="form-control" id="firstName" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nachname:</label>
+                <input type="text" class="form-control" id="fullName" />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Ihre Email addresse:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="email@email.com"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >Wir werden Ihre E-Mail-Adresse niemals an Dritte
+                  weitergeben.</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="formGroupExampleInput">Ihre Nachricht</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  rows="6"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Absenden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER START -->
+    <footer>
+      <div class="container">
+        <p>&#9400; GeTu Prospects e.V.</p>
+        <ul>
+          <li><a href="./index.html">Startseite</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+          <li><a href="#">Impressium</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- JAVASCRIPT SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

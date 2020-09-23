@@ -19,3 +19,65 @@
     }
   }
 }
+.form-label {
+  @apply block;
+  @apply mb-2;
+}
+.form-group {
+  @apply mb-4;
+}
+.form-control {
+  @apply appearance-none;
+  @apply border-2;
+  @apply border-gray-200;
+  @apply rounded;
+  @apply w-full;
+  @apply py-2;
+  @apply px-4;
+  @apply text-gray-700;
+  @apply leading-tight;
+}
+.form-control:focus {
+  @apply outline-none;
+  @apply bg-white;
+  @apply border-primary;
+}
+.active {
+  @apply bg-primary;
+  @apply text-gray-900;
+}
+.nav-link:hover,
+.nav-link:active {
+  @apply text-primary;
+}
+
+
+#header::before,
+#header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: red;
+}
+#header::before {
+  margin-bottom: 5px;
+}
+#header::after {
+  margin-top: 5px;
+}
+#hero-leitbild {
+  background: url("/img/leitbild2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#vision2{
+  width:883px;
+  height: 883px;
+}
+#hero-kontakt{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("/img/contact.jpg");
+  background-size:cover;
+  background-position: center;
+}
