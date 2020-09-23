@@ -153,7 +153,12 @@
         class="px-8 py-8 md:px-16 md:py-16 bg-yellow-100 md:bg-gray-100"
       >
         <h3 class="font-bold mb-5 font-merriweather">Kontakt Formular</h3>
-        <form name="contact" method="post" data-netlify="true">
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
           <div class="form-group">
             <label for="anrede" class="form-label">Anrede:</label>
             <div class="inline-block relative w-full">
@@ -182,11 +187,21 @@
           </div>
           <div class="form-group">
             <label for="vorname" class="form-label">Vorname:</label>
-            <input class="form-control" id="vorname" type="text" name="vorname"/>
+            <input
+              class="form-control"
+              id="vorname"
+              type="text"
+              name="vorname"
+            />
           </div>
           <div class="form-group">
             <label for="nachname" class="form-label">Nachname:</label>
-            <input type="text" class="form-control" id="nachname" name="nachname"/>
+            <input
+              type="text"
+              class="form-control"
+              id="nachname"
+              name="nachname"
+            />
           </div>
           <div class="form-group">
             <label for="email" class="form-label">Ihre Email Addresse:</label>
@@ -207,6 +222,7 @@
               rows="6"
               name="nachricht"
             ></textarea>
+            <div class="form-group" data-netlify-recaptcha="true"></div>
             <button
               type="submit"
               class="py-2 text-white rounded px-4 bg-primary hover:bg-yellow-800 mt-3 inline-block text-lg font-bold"
@@ -234,7 +250,18 @@
         </div>
         <div class="credit text-sm hidden md:block md:text-base">
           <p>&#9400; 2020</p>
-          <span class="text-gray-500">Photo by <a href="https://unsplash.com/@milesb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Miles Burke</a> on <a href="https://unsplash.com/s/photos/contact-us?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          <span class="text-gray-500"
+            >Photo by
+            <a
+              href="https://unsplash.com/@milesb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+              >Miles Burke</a
+            >
+            on
+            <a
+              href="https://unsplash.com/s/photos/contact-us?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+              >Unsplash</a
+            ></span
+          >
         </div>
         <div class="action hidden md:block md:text-base">
           <button
