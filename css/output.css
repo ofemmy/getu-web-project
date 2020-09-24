@@ -21742,6 +21742,12 @@ video {
   background-position: center;
 }
 
+#logo {
+  background: url("/img/getu-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

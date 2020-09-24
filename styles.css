@@ -81,3 +81,8 @@
   background-size: cover;
   background-position: center;
 }
+#logo {
+  background: url("/img/getu-1.png");
+  background-size: cover;
+  background-position: center;
+}
