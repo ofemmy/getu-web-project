@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -37,8 +38,7 @@ module.exports = {
         "8rem": "8rem",
       }),
       fontFamily: (theme) => ({
-        "open-sans": ['"Open Sans"', "sans-serif"],
-        merriweather: ["Merriweather", "serif"],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       }),
       borderWidth:theme=>({
         "10":"10px"

@@ -4,7 +4,6 @@
   "description": "Getu Prospects e.V. official website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:tailwind": "tailwindcss build ./styles.css -o ./css/output.css",
     "dev": "watch 'npm run compile:tailwind' ./"
   },
@@ -18,9 +17,7 @@
     "url": "https://github.com/ofemmy/getu-web-project/issues"
   },
   "homepage": "https://github.com/ofemmy/getu-web-project#readme",
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  },
+  "devDependencies": {},
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^1.9.1",
